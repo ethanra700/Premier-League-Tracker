@@ -1,14 +1,19 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import Logo from '../components/Logo'
 
 function Layout() {
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
+
   return (
     <>
-      <header className="site-header">
-        <Link to="/" className="brand">
-          <Logo height={28} />
-        </Link>
-      </header>
+      {!isHome && (
+        <header className="site-header">
+          <Link to="/" className="brand">
+            <Logo height={28} />
+          </Link>
+        </header>
+      )}
       <main>
         <Outlet />
       </main>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PitchBackground from '../components/PitchBackground'
+import Logo from '../components/Logo'
 import { ShirtIcon, GlobeIcon, TargetIcon } from '../components/Icons'
 
 function Home() {
@@ -7,6 +8,7 @@ function Home() {
     <div className="home">
       <PitchBackground />
       <div className="home-content">
+        <Logo className="home-logo" />
         <h1>Explore Premier League player stats</h1>
         <p className="subtitle">Browse by team, nation, or position.</p>
         <nav className="nav-links">

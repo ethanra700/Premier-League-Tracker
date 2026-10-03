@@ -1,10 +1,10 @@
-function Logo({ height = 48 }) {
+function Logo({ height, className }) {
   return (
     <img
       src="/logo.png"
       alt="Premier League Tracker"
-      height={height}
-      style={{ height, width: 'auto', display: 'block' }}
+      className={className}
+      style={height ? { height, width: 'auto', display: 'block' } : { display: 'block' }}
     />
   )
 }
