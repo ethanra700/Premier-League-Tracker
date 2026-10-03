@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import PitchBackground from '../components/PitchBackground'
 import Logo from '../components/Logo'
-import { ShirtIcon, GlobeIcon, TargetIcon } from '../components/Icons'
 
 function Home() {
   return (
@@ -13,16 +12,16 @@ function Home() {
         <p className="subtitle">Browse by team, nation, or position.</p>
         <nav className="nav-links">
           <Link to="/teams" className="nav-link">
-            <ShirtIcon />
             Teams
+            <span className="nav-link-arrow" aria-hidden="true">→</span>
           </Link>
           <Link to="/nations" className="nav-link">
-            <GlobeIcon />
             Nation
+            <span className="nav-link-arrow" aria-hidden="true">→</span>
           </Link>
           <Link to="/positions" className="nav-link">
-            <TargetIcon />
             Positions
+            <span className="nav-link-arrow" aria-hidden="true">→</span>
           </Link>
         </nav>
       </div>

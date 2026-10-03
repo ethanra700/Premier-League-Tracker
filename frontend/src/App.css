@@ -75,9 +75,9 @@ main {
 .nav-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 22px;
   padding: 14px 24px;
-  border-radius: 14px;
+  border-radius: 0;
   background: var(--code-bg);
   border: 1px solid var(--border);
   box-shadow: rgba(56, 0, 60, 0.08) 0 6px 16px -4px, rgba(0, 0, 0, 0.04) 0 2px 4px -1px;
@@ -88,8 +88,13 @@ main {
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
 }
 
-.nav-link svg {
+.nav-link-arrow {
   color: var(--accent);
+  transition: transform 0.15s ease;
+}
+
+.nav-link:hover .nav-link-arrow {
+  transform: translateX(4px);
 }
 
 .nav-link:hover {
