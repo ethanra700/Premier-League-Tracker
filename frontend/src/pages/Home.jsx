@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import PitchBackground from '../components/PitchBackground'
 import Logo from '../components/Logo'
+import heroPhoto from '../assets/haaland.png'
 
 function Home() {
   return (
     <div className="home">
-      <PitchBackground />
+      <img src={heroPhoto} alt="" className="home-bg-photo" aria-hidden="true" />
       <div className="home-content">
         <Logo className="home-logo" />
         <h1>Explore Premier League player stats</h1>
